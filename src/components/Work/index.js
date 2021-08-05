@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Gallery() {
+function Work() {
     return (
         <section class="b-w-c">
         <div id="my-work" class="my-work">
@@ -43,4 +43,4 @@ function Gallery() {
     );
 }
 
-export default Gallery;
+export default Work;
