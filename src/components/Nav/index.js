@@ -1,10 +1,12 @@
 import React from 'react';
 
+
+
 function Nav(props) {
     const {
-        categories = [],
-        contactSelected,
-        setContactSelected
+    
+    contactSelected,
+    setContactSelected
       } = props;
     return (
         <header>
@@ -14,15 +16,15 @@ function Nav(props) {
         <nav>
             <ul>
                 <li>
-                    <a href="#about-me" class="coolbtn">About Me</a>
+                    <a href="#about-me" class="coolbtn" onClick={() => setContactSelected(false)}>About Me</a>
                 </li>
                 <li>
-                    <a href="#my-work" class="coolbtn">My Work</a>
+                    <a href="#my-work" class="coolbtn" onClick={() => setContactSelected(false)}>My Work</a>
                 </li>
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                    <a href="#contact-info" class="coolbtn" id = "contact-me">Contact Info</a>
-                    <span onClick={() => setContactSelected(true)}></span>
+                    <span class="coolbtn" id = "contact-me" onClick={() => setContactSelected(true)}>Contact Info</span>
                 </li>
+        
             </ul>
         </nav>
         

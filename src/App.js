@@ -8,23 +8,23 @@ import './App.css';
 
 
 function App() {
-  const [categories] = useState([]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  
   
   const [contactSelected, setContactSelected] = useState(false);
   return (
 <div>
 <Nav
-categories={categories}
-setCurrentCategory={setCurrentCategory}
-currentCategory={currentCategory}
 contactSelected = {contactSelected}
 setContactSelected ={setContactSelected}
 ></Nav>
-<About></About>
-<Gallery currentCategory={currentCategory}></Gallery>
-<Contact currentCategory={currentCategory}></Contact>
+{!contactSelected ? (
+      <>
+      <Gallery></Gallery>
+      <About></About>
+      </>
+      ) : (
+      <Contact></Contact>
+      )}
 </div>
   );
 }
