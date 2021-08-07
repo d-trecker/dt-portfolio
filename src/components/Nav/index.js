@@ -10,7 +10,7 @@ function Nav(props) {
       <nav>
         <ul>
           {navOpt.map((navOpt) => (
-            <li className={currentNavOpt.name === navOpt.name && "navActive"}>
+            <li className={currentNavOpt.name === navOpt.name && "navActive"} key={navOpt.org}>
               <a
                 href={`#${navOpt.org}`}
                 className="coolbtn"
