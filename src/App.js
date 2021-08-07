@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer"
 import "./App.css";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         currentNavOpt={currentNavOpt}
       ></Nav>
       <main>{displayComp(currentNavOpt.name)}</main>
+      <Footer></Footer>
     </div>
   );
 }

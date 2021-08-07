@@ -254,16 +254,8 @@ header nav ul{
   max-width: 100%;
   height: auto;
 }
-.run-buddy {
-  border: solid var(--fourth-color);
-  height: auto;
-  width: 90%;
-}
-.horiseon {
-  border: solid var(--fourth-color);
-  width: 40%;
-  height: auto;
-}
+
+
 
 .quiz-time {
   border: solid var(--fourth-color);
@@ -316,6 +308,32 @@ header nav ul{
   font-size: 1.5vw;
 }
 
+form {
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+
+
+
+
+
+
+
 /*END CONTACT*/
 
 /*----END BIO-WORK-CONTACT SECTION----*/
@@ -324,11 +342,47 @@ header nav ul{
 /*----START FOOTER----*/
 .footer {
   width: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border:solid var(--fourth-color);
+  margin-top: 70px;
+  position: relative;
+  left:0;
+  bottom:0;
+  right:0;
 }
+
+.link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position:absolute;
+  width:210px;
+  background-color: none;
+  color:white;
+  top:0;
+  left:0;
+  padding-left:10px;
+  padding-top:10px;
+  font-size:16px;
+  z-index:5;
+}
+
+/* .footer p {
+ position:absolute;
+ width:210px;
+ background-color: none;
+ color:white;
+ top:0;
+ left:0;
+ padding-left:10px;
+ padding-top:10px;
+ font-size:16px;
+ z-index:5;
+} */
+
 .footer img {
   height: 10%;
   width: 100%;

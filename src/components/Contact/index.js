@@ -1,18 +1,63 @@
-import React from 'react';
+import React, {useState} from "react";
+import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
-    return (
-        <section>
-        <div className="contact" id="contact-info">
-            <h2>Contact Info:</h2>
-            <p>Email: <a href="mailto: dylan.j.trecker@gmail.com" target="blank"
-                    rel="noopener noreferrer">dylan.j.trecker@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/dylan-trecker-791698169" target="blank"
-                    rel="noopener noreferrer">Dylan Trecker</a></p>
-            <p>Github: <a href="https://github.com/d-trecker" target="blank" rel="noopener noreferrer">d-trecker</a></p>
+    const [formState, setFormState] = useState({name: '', email: '', message: ''});
+    const {name, email, message} = formState;
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+          console.log('Form', formState);
+        }
+      };
+
+    function handleChange(e) {
+        if(e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            console.log(isValid);
+            //is valid conditional statement
+            if(!isValid) {
+                setErrorMessage('Your email is invalid');
+            } else {
+                setErrorMessage('');
+            } 
+        } else {
+            if (!e.target.value.length) {
+              setErrorMessage(`${e.target.name} is required.`);
+            } else {
+              setErrorMessage('');
+            }
+          }
+    };
+
+  return (
+    <section>
+      <h1 data-testid = "h1tag">Contact Me</h1>
+      <form id="contact-form">
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
         </div>
+        <div>
+          <label htmlFor="email">Email address:</label>
+          <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
+        </div>
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+        </div>
+        {errorMessage && (
+              <div>
+                 <p className="error-text">{errorMessage}</p>
+              </div>
+          )}
+        <button data-testid = "button" type="submit" onSubmit ={handleSubmit}>Submit</button>
+      </form>
     </section>
-    );
+  );
 }
 
 export default Contact;
