@@ -54,8 +54,7 @@ function Contact() {
                  <p className="error-text">{errorMessage}</p>
               </div>
           )}
-        <button data-testid = "button" type="submit" onSubmit ={handleSubmit}>Submit</button>
-        <i className="fab fa-github fa-3x"></i>
+        <button className= "contactBtn" data-testid = "button" type="submit" onSubmit ={handleSubmit}>Submit</button>
       </form>
     </section>
   );
