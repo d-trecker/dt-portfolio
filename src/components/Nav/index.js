@@ -5,12 +5,12 @@ function Nav(props) {
   return (
     <header>
       <h1>
-        <a href="/">Dylan Trecker's Portfolio</a>
+        <a href="/">Dylan Trecker</a>
       </h1>
       <nav>
         <ul>
           {navOpt.map((navOpt) => (
-            <li className={currentNavOpt.name === navOpt.name && "navActive"} key={navOpt.org}>
+            <li className={currentNavOpt.name === navOpt.name ? "navActive" : undefined} key={navOpt.org}>
               <a
                 href={`#${navOpt.org}`}
                 className="coolbtn"

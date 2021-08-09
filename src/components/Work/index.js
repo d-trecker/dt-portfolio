@@ -8,10 +8,9 @@ import comingSoon from "../../assets/images/dyl-soon.jpg";
 
 function Work() {
   return (
-    <section className="b-w-c">
+    <div className="b-w-c">
     <div id="my-work" className="my-work">
         <h2>Work</h2>
-        
         <a href="https://d-trecker.github.io/quiz-time/" target="blank" rel="noopener noreferrer">
             <img src={quizTime} alt="a timed Javascript quiz website" className="quiz-time"></img>
         </a>
@@ -36,7 +35,7 @@ function Work() {
             className="coming-soon"></img>
       
     </div>
-    </section>
+    </div>
 
   );
 }

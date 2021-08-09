@@ -20,6 +20,11 @@ function App() {
       name: "Contact",
       org: "contact-me",
     },
+    {
+      name: "Resume",
+      org: "resume",
+    },
+    
   ]);
 
   const [currentNavOpt, setCurrentNavOpt] = useState(navOpt[0]);

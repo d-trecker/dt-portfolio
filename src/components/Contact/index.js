@@ -34,15 +34,15 @@ function Contact() {
     };
 
   return (
-    <section>
-      <h1 data-testid = "h1tag">Contact Me</h1>
+    <section className = "form-wrapper">
       <form id="contact-form">
-        <div>
+      <h1 data-testid = "h1tag">Contact Me</h1>
+        <div className = "contact-divs">
           <label htmlFor="name">Name:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email">Email:</label>
           <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
         </div>
         <div>
@@ -55,6 +55,7 @@ function Contact() {
               </div>
           )}
         <button data-testid = "button" type="submit" onSubmit ={handleSubmit}>Submit</button>
+        <i className="fab fa-github fa-3x"></i>
       </form>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import meImage from "../../assets/images/me.jpeg";
+import meImage from "../../assets/images/me.png";
 function About() {
     return (
         <div className="bio">
