@@ -404,14 +404,6 @@ header nav ul{
     /* border: none; */
   }
 
-  /* .contactBtn:nth-child(1) {
-    filter: hue-rotate(115deg);
-  } */
-
-  /* .contactBtn:nth-child(3) {
-    filter: hue-rotate(270deg);
-  } */
-
   .contactBtn:hover {
     background: var(--fourth-color);
     color: #111;
@@ -598,6 +590,10 @@ header nav ul{
       .coolbtn {
         font-size: 4.5vw;
       }
+
+      .coolbtn:focus {
+        font-size: 4.5vw;
+      }
       .bio img {
         max-width: 50%;
         padding: .2rem;
@@ -606,11 +602,11 @@ header nav ul{
         border-radius: 150px;
         background-size: contain;
       }
-      .b-w-c {
+      /* .b-w-c {
           flex-wrap: wrap;
           justify-content: center;
           align-items: center;
-      }
+      } */
       .bio  {
           flex-direction: column;
           flex: 100%;
@@ -620,6 +616,9 @@ header nav ul{
       .bio p 
       {
           text-align: center;
+      }
+      .bio h2 {
+        padding-top: 1.2rem;
       }
       .my-work{
           flex: 1 100%;
