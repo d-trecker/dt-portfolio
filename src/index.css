@@ -41,10 +41,41 @@ code {
   font-style: normal;
 }
 
+@font-face {
+  font-family:"cafe";
+  src: url(./assets/fonts/PopularCafeNF.ttf);
+  font-weight: 50px;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
   color: var(--primary-color);
+  min-height: 100%;
 }
+
+h2 {
+  color: var(--second-color);
+  font-family: cafe;
+  font-size: 50px;
+  text-shadow: 0 0 5px rgba(255, 143, 31, 0.897);
+}
+
+h3 {
+  font-family: cafe;
+  color: var(--third-color);
+  font-size: 30px;
+}
+
+p {
+  color: var(--third-color);
+}
+
+
 /*----START HEADER----*/
 header {
   /* padding: 50px 30px; */
@@ -52,9 +83,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border-top: solid 5px var(--fourth-color);
-  border-bottom: solid 5px var(--fourth-color);
+  border-top: solid 3px var(--fourth-color);
+  border-bottom: solid 3px var(--fourth-color);
   justify-content: space-around;
+  padding-top: .5rem;
+  padding-bottom: 10px;
 }
 header h1 {
   font: 100px bold;
@@ -101,7 +134,7 @@ header nav ul{
 
 .coolbtn {
   /* margin: 10px 15px; */
-  font-family: storytime;
+  font-family: cafe;
   font-size: 2.55vw;
   color: var(--second-color);
   display: inline-block;
@@ -200,6 +233,10 @@ header nav ul{
   min-width: 0;
   min-height: 0;
   flex: 1;
+  background-color: black;
+  box-shadow: 0 3px 25px rgba(73, 72, 72, 0.6);
+  border-radius: 230px;
+
 }
 
 .bits {
@@ -211,17 +248,13 @@ header nav ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: var(--second-color);
-  font-family: stilltime;
-  font-size: 40px;
   text-align: center;
   border-bottom: solid var(--second-color);
-  text-shadow: 0 0 2px rgba(255, 143, 31, 0.897);
-  width: 100%;
+
+
   
 }
 .bio p {
-  color: var(--third-color);
   text-align: left;
   padding: 10px 10px;
   /* width: 40%; */
@@ -248,27 +281,19 @@ header nav ul{
   flex: 1;
 } */
 .my-work h2 {
-  color: var(--second-color);
-  font-family: stilltime;
-  padding: 20px;
-  font-size: 55px;
   text-align: center;
-  text-shadow: 0 0 5px rgba(255, 143, 31, 0.897);
+  padding: 20px;
   border-bottom: solid 2px var(--fourth-color);
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
-  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 
 }
 
 .my-work h3 {
-  font-family: storytime;
-  color: var(--third-color);
   text-align: center;
-  font-size: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
 }
@@ -315,7 +340,6 @@ header nav ul{
     align-items: center;
     color: rgb(68,11,212);
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.25em rgb(5, 58, 60);
-    
     background: rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     /* box-shadow: 0 15px 25px rgba(255,32,121, 0.6); */
@@ -332,6 +356,9 @@ header nav ul{
     padding-bottom: .5rem;
     margin-bottom: .5rem;
     border-bottom: solid 2px rgb(68,11,212);
+  }
+  label {
+    font-size: 1.1rem;
   }
   
   input {
@@ -353,7 +380,10 @@ header nav ul{
   
   textarea {
     background-color: rgba(253, 253, 253, 0.575);
-    width: 75%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   p.error-text {
@@ -434,6 +464,20 @@ header nav ul{
 /*END CONTACT*/
 
 
+/*----START RESUME----*/
+.resume {
+  /* text-align: center; */
+  padding: 20px;
+  border-bottom: solid 2px var(--fourth-color);
+  background: rgba(4,0,94, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*END RESUME*/
+
 /*----START FOOTER----*/
 
 .footer {
@@ -442,13 +486,14 @@ header nav ul{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-top:solid var(--fourth-color);
-  border-bottom:solid var(--fourth-color);
+  border-top:solid 3px var(--fourth-color);
+  border-bottom:solid 3px var(--fourth-color);
   margin-top: 70px;
   position: relative;
   left:0;
   bottom:0;
   right:0;
+  
 
 }
 
@@ -480,8 +525,20 @@ header nav ul{
 
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width:768px) {
-      header h1 {
-      font-size: 10vw;
+    header {
+      border-top: solid 3px var(--fourth-color);
+      border-bottom: solid 3px var(--fourth-color);
+      flex-direction: row;
+      padding-bottom: 1rem;
+    } 
+    header h1 {
+      font-size: 15vw;
+    }
+    header nav ul{ 
+      flex-direction: row;
+      }
+      .coolbtn {
+        font-size: 4.5vw;
       }
       .coolbtn::before {
         background: none;
@@ -502,20 +559,46 @@ header nav ul{
           font-size: 4vw;
 
       }
+
+      h2 {
+        padding-top: 1.5rem;
+      }
+      .footer {
+        position:relative;
+        bottom:0;
+        width:100%;
+        height:auto;
+      
+      }
+      .footer img {
+        height: auto;
+        width: 100%;
+      }
+      
       
   }
   @media screen and (max-width: 575px) {
       header {
-          border-top: solid 5px var(--fourth-color);
-          border-bottom: solid 5px var(--fourth-color);
+          border-top: solid 3px var(--fourth-color);
+          border-bottom: solid 3px var(--fourth-color);
           flex-direction: row;
       }
       header h1 {
-          font-size: 15vw;
+          font-size: 20vw;
       }
-      header nav ul li a {
-          font-size: 3vw;
-          text-align: center;
+      header nav ul{ 
+        flex-direction: row;
+      }
+      .coolbtn {
+        font-size: 4.5vw;
+      }
+      .bio img {
+        max-width: 50%;
+        padding: .2rem;
+        background-color: black;
+        box-shadow: 0 10px 25px rgba(255,32,121, 0.6);
+        border-radius: 150px;
+        background-size: contain;
       }
       .b-w-c {
           flex-wrap: wrap;
@@ -544,6 +627,15 @@ header nav ul{
           flex: 100%;
           font: 8vw;
       }
+      form {
+        width: 80%;
+      }
+      input {
+        width: 60%;
+      }
+      textarea{
+        width: 60%;
+      }
       .contact{
           flex-wrap: wrap;
           flex-direction: column;
@@ -556,5 +648,9 @@ header nav ul{
       .contact p {
           font-size: 3vw;
       }
+      .footer {
+        align-items: center;
+      }
+
   }
 

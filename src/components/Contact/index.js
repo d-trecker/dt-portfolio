@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { validateEmail } from '../../utils/helpers';
 
+
 function Contact() {
     const [formState, setFormState] = useState({name: '', email: '', message: ''});
     const {name, email, message} = formState;
@@ -26,7 +27,7 @@ function Contact() {
             } 
         } else {
             if (!e.target.value.length) {
-              setErrorMessage(`${e.target.name} is required.`);
+              setErrorMessage(`A ${e.target.name} is required.`);
             } else {
               setErrorMessage('');
             }

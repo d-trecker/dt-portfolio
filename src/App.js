@@ -3,7 +3,8 @@ import Nav from "./components/Nav";
 import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer"
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
         return <Work></Work>;
       case "Contact":
         return <Contact></Contact>;
+      case "Resume":
+        return <Resume></Resume>;
       default:
         return <About></About>;
     }
