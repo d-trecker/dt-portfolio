@@ -15,8 +15,8 @@ function Resume() {
             • Software: Visual Studio Code, jGRASP, Insomnia, MySQL Workbench <br></br>  <br></br>
             • Deployment: Git, GitHub and Heroku <br></br>  <br></br>
             </p>
-
-            <button className= "contactBtn">Download Resume</button>
+          
+            <a className= "contactBtn" href= "https://drive.google.com/file/d/1Rledu8c-K6RtIZSdzA0QXGhuesXfF3M9/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
 
 
         </div>

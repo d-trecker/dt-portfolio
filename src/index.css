@@ -79,7 +79,6 @@ p {
 
 /*----START HEADER----*/
 header {
-  /* padding: 50px 30px; */
   background-color: black;
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +90,7 @@ header {
   padding-bottom: 10px;
   box-shadow: inset 0 0 0.5em 0 var(--fourth-color), 0 0 0.5em 0 var(--fourth-color);
 }
+
 header h1 {
   font: 100px bold;
   font-family: stilltime;
@@ -99,13 +99,13 @@ header h1 {
   margin: 0;
   text-shadow: 0 0 10px rgba(255, 143, 31, 0.897);
   text-align: center;
-
-  /* border-bottom: solid var(--second-color); */
 }
+
 header a {
   text-decoration: none;
   color: var(--second-color);
 }
+
  nav {
   position: relative;
   bottom: 0;
@@ -115,7 +115,6 @@ header a {
 header nav ul{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   border-top: var(--second-color) 0.15em solid;
   border-bottom: var(--second-color) 0.15em solid;
   margin: none;
@@ -125,30 +124,22 @@ header nav ul{
   text-decoration: none;
   box-shadow: inset 0 0 0.5em 0 var(--second-color), 0 0 0.5em 0 var(--second-color);
   position: relative;
-  /* transition: background-color 100ms 
-  linear; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
 }
 
-
 .coolbtn {
-  /* margin: 10px 15px; */
   font-family: cafe;
   font-size: 2.55vw;
   color: var(--second-color);
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  /* border-top: var(--second-color) 0.15em solid;
-  border-bottom: var(--second-color) 0.15em solid; */
-  /* border: var(--second-color) 0.15em solid; */
   padding: .25em 1em;
   border-radius: 1em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.25em var(--second-color);
-  /* box-shadow: inset -7px 0 0.5em 0 var(--second-color), -.5px 0 0.5em 0 var(--second-color); */
   position: relative;
   transition: background-color 100ms 
   linear;
@@ -170,7 +161,6 @@ header nav ul{
 
 }
 
-
 .coolbtn::after {
   content: '';
   position: absolute;
@@ -186,10 +176,9 @@ header nav ul{
 
 .coolbtn:hover, 
 .coolbtn:focus {
-  /* background: var(--second-color); */
-  /* border-radius: 1em; */
   color: var(--fith-color);
   text-shadow: none;
+  
 
 }
 
@@ -202,6 +191,20 @@ header nav ul{
   opacity: 1;
 }
 
+.coolbtn:focus {
+    font-family: cafe;
+    font-size: 2.55vw;
+    color: var(--second-color);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: .25em 1em;
+    border-radius: 1em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.25em var(--second-color);
+    position: relative;
+    transition: background-color 100ms 
+    linear;
+}
 
 
 /*-END HEADER-*/
@@ -216,13 +219,11 @@ header nav ul{
   align-items: center;
   color: rgb(68,11,212);
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.25em rgb(5, 58, 60);
-  
   margin-right: 20px;
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
   border-bottom: solid .15rem var(--fourth-color);
-  /* border-radius: 10px; */
   width: 100%;
   padding: 20px;
 
@@ -259,10 +260,9 @@ header nav ul{
 .bio p {
   text-align: left;
   padding: 10px 10px;
-  /* width: 40%; */
-  
 }
-/*END BIO*/
+
+/*-END BIO-*/
 
 /*---START MY WORK---*/
 
@@ -310,21 +310,17 @@ header nav ul{
   height: auto;
   width: 40%;
   height: auto;
-  
-
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.4);
   border-radius: 10px;
-  /* width: 100%; */
   padding: 20px;
 }
 
+/*-END MY WORK-*/
 
-/*END MY WORK*/
 
-/*START CONTACT*/
-
+/*----START CONTACT----*/
 
 .form-wrapper {
   display: flex;
@@ -463,12 +459,11 @@ header nav ul{
   }
 
 
-/*END CONTACT*/
+/*-END CONTACT-*/
 
 
 /*----START RESUME----*/
 .resume {
-  /* text-align: center; */
   padding: 20px;
   border-bottom: solid .15rem var(--fourth-color);
   background: rgba(4,0,94, 0.5);
@@ -478,7 +473,12 @@ header nav ul{
   padding-bottom: 20px;
 }
 
-/*END RESUME*/
+.resume h2 {
+  border-bottom: solid var(--second-color);
+
+}
+
+/*-END RESUME-*/
 
 /*----START FOOTER----*/
 
@@ -528,7 +528,7 @@ header nav ul{
 .footer a {
   color: var(--second-color);
 }
-/*----END FOOTER----*/
+/*-END FOOTER-*/
 
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width:768px) {
@@ -564,10 +564,6 @@ header nav ul{
           font-size: 4vw;
 
       }
-
-      h2 {
-        padding-top: 1.5rem;
-      }
       .link-wrapper  {
         position: relative;
         justify-content: space-around;
@@ -596,6 +592,9 @@ header nav ul{
       header nav ul{ 
         flex-direction: row;
       }
+      h2 {
+        font-size: 8vw;
+      }
       .coolbtn {
         font-size: 4.5vw;
       }
@@ -618,9 +617,6 @@ header nav ul{
           align-items: center;
           width: 100%;
       }
-      .bio h2 {
-          font-size: 8vw;
-      }
       .bio p 
       {
           text-align: center;
@@ -632,7 +628,6 @@ header nav ul{
       .my-work h2 {
           text-align: center;
           flex: 100%;
-          font: 8vw;
       }
       form {
         width: 80%;
@@ -648,19 +643,9 @@ header nav ul{
           flex-direction: column;
           text-align: center;
       }
-      .contact h2 {
-          flex: 100%;
-          font-size: 5vw;
-      }
-      .contact p {
-          font-size: 3vw;
-      }
       .link-wrapper a {
         font-size: .9rem;
        }
-      .footer {
-        align-items: center;
-      }
 
   }
 
