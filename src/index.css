@@ -62,7 +62,8 @@ h2 {
   color: var(--second-color);
   font-family: cafe;
   font-size: 50px;
-  text-shadow: 0 0 5px rgba(255, 143, 31, 0.897);
+  text-shadow: 0 0 5px rgba(255,32,121, 1);
+  /* rgba(255, 143, 31, 0.897) */
 }
 
 h3 {
@@ -83,11 +84,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border-top: solid 3px var(--fourth-color);
-  border-bottom: solid 3px var(--fourth-color);
+  border-top: solid .1rem var(--fourth-color);
+  border-bottom: solid .1rem var(--fourth-color);
   justify-content: space-around;
   padding-top: .5rem;
   padding-bottom: 10px;
+  box-shadow: inset 0 0 0.5em 0 var(--fourth-color), 0 0 0.5em 0 var(--fourth-color);
 }
 header h1 {
   font: 100px bold;
@@ -123,8 +125,8 @@ header nav ul{
   text-decoration: none;
   box-shadow: inset 0 0 0.5em 0 var(--second-color), 0 0 0.5em 0 var(--second-color);
   position: relative;
-  transition: background-color 100ms 
-  linear;
+  /* transition: background-color 100ms 
+  linear; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -219,7 +221,7 @@ header nav ul{
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
-  border-bottom: solid 2px var(--fourth-color);
+  border-bottom: solid .15rem var(--fourth-color);
   /* border-radius: 10px; */
   width: 100%;
   padding: 20px;
@@ -264,7 +266,7 @@ header nav ul{
 
 /*---START MY WORK---*/
 
-.b-w-c {
+/* .b-w-c {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -272,7 +274,7 @@ header nav ul{
   justify-content: space-around;
   
   
-}
+} */
 
 /* .my-work {
   display: flex;
@@ -283,7 +285,7 @@ header nav ul{
 .my-work h2 {
   text-align: center;
   padding: 20px;
-  border-bottom: solid 2px var(--fourth-color);
+  border-bottom: solid .15rem var(--fourth-color);
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
@@ -331,7 +333,7 @@ header nav ul{
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
-  border-bottom: solid 2px var(--fourth-color);
+  border-bottom: solid .15rem var(--fourth-color);
   
   }
   
@@ -406,13 +408,13 @@ header nav ul{
     /* border: none; */
   }
 
-  .contactBtn:nth-child(1) {
+  /* .contactBtn:nth-child(1) {
     filter: hue-rotate(115deg);
-  }
+  } */
 
-  .contactBtn:nth-child(3) {
+  /* .contactBtn:nth-child(3) {
     filter: hue-rotate(270deg);
-  }
+  } */
 
   .contactBtn:hover {
     background: var(--fourth-color);
@@ -468,7 +470,7 @@ header nav ul{
 .resume {
   /* text-align: center; */
   padding: 20px;
-  border-bottom: solid 2px var(--fourth-color);
+  border-bottom: solid .15rem var(--fourth-color);
   background: rgba(4,0,94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255,32,121, 0.6);
@@ -486,8 +488,6 @@ header nav ul{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-top:solid 3px var(--fourth-color);
-  border-bottom:solid 3px var(--fourth-color);
   margin-top: 70px;
   position: relative;
   left:0;
@@ -500,22 +500,29 @@ header nav ul{
 .link-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  position:absolute;
-  width:210px;
+  flex-direction: row;
+  justify-content: flex-end;
+  position:relative;
+  /*absolute moves it, but shifts page*/
+  width:100%;
   background-color: none;
   color:white;
   top:0;
   left:0;
   padding-left:10px;
-  padding-top:10px;
-  font-size:16px;
-  z-index:5;
+  padding-top:50px;
+
 }
+
+.link-wrapper a {
+  font-size: 1.2rem;
+ }
 
 .footer img {
   height: 100%;
   width: 100%;
+  border-top:solid .15rem var(--fourth-color);
+  border-bottom:solid .15rem var(--fourth-color);
 }
 
 .footer a {
@@ -526,8 +533,6 @@ header nav ul{
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width:768px) {
     header {
-      border-top: solid 3px var(--fourth-color);
-      border-bottom: solid 3px var(--fourth-color);
       flex-direction: row;
       padding-bottom: 1rem;
     } 
@@ -563,6 +568,10 @@ header nav ul{
       h2 {
         padding-top: 1.5rem;
       }
+      .link-wrapper  {
+        position: relative;
+        justify-content: space-around;
+       }
       .footer {
         position:relative;
         bottom:0;
@@ -579,8 +588,6 @@ header nav ul{
   }
   @media screen and (max-width: 575px) {
       header {
-          border-top: solid 3px var(--fourth-color);
-          border-bottom: solid 3px var(--fourth-color);
           flex-direction: row;
       }
       header h1 {
@@ -648,6 +655,9 @@ header nav ul{
       .contact p {
           font-size: 3vw;
       }
+      .link-wrapper a {
+        font-size: .9rem;
+       }
       .footer {
         align-items: center;
       }

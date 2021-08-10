@@ -9,7 +9,7 @@ import comingSoon from "../../assets/images/dyl-soon.jpg";
 function Work() {
   return (
     <div className="b-w-c">
-    <div id="my-work" className="my-work">
+    <div className="my-work">
         <h2>Work</h2>
         <h3>Quiz Time</h3>
         <a href="https://d-trecker.github.io/quiz-time/" target="blank" rel="noopener noreferrer">
