@@ -279,6 +279,7 @@ header nav ul{
 /* .my-work {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-basis: 100%;
   flex: 1;
 } */
@@ -298,6 +299,10 @@ header nav ul{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 10px;
+}
+.my-work i {
+  padding-left: 1rem;
+  color: var(--second-color);
 }
 
 .projects {

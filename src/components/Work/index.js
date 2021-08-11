@@ -12,27 +12,51 @@ function Work() {
     <div className="b-w-c">
     <div className="my-work">
         <h2>Work</h2>
-        <h3>Quiz Time</h3>
+        <h3>Quiz Time <a
+          href="https://github.com/d-trecker/quiz-time.git"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="https://d-trecker.github.io/quiz-time/" target="blank" rel="noopener noreferrer">
             <img src={quizTime} alt="a timed Javascript quiz website" className="projects"></img>
         </a>
-        <h3>D-Treck's Scheduler</h3>
+        <h3>D-Treck's Scheduler<a
+          href="https://github.com/d-trecker/dtreck-scheduler.git"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="https://d-trecker.github.io/dtreck-scheduler/" target="blank" rel="noopener noreferrer">
             <img src={dtScheduler} alt="A work day scheduler" className="projects"></img>
         </a>
-        <h3>D-Treck's Weather Report</h3>
+        <h3>D-Treck's Weather Report<a
+          href="https://github.com/d-trecker/dtreck-weather-report.git"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="https://d-trecker.github.io/dtreck-weather-report/" target="blank" rel="noopener noreferrer">
             <img src={weatherReport} alt="A weather app" className="projects"></img>
         </a>
-        <h3>The Pursuit of Hoppiness</h3>
+        <h3>The Pursuit of Hoppiness<a
+          href="https://github.com/d-trecker/pursuit-of-hoppiness.git"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="https://d-trecker.github.io/pursuit-of-hoppiness/" target="blank" rel="noopener noreferrer">
             <img src= {poh} alt="A local brewery weather app" className="projects"></img>
         </a>
-        <h3>Just-Noise</h3>
+        <h3>Just-Noise<a
+          href="https://github.com/d-trecker/just-noise.git"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="https://just-noise.herokuapp.com/" target="blank" rel="noopener noreferrer">
             <img src={justNoise} alt="A social media music app" className="projects"></img>
         </a>
-        <h3>Cool Notes</h3>
+        <h3>Cool Notes<a
+          href="https://github.com/d-trecker/cool-notes.git"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="http://dt-cool-notes.herokuapp.com/" target="blank" rel="noopener noreferrer">
             <img src={coolNotes} alt="A cool note app" className="projects"></img>
         </a>
