@@ -38,4 +38,4 @@ Feel free to drop me a line @ [dylan.j.trecker@gmail.com](mailto:dylan.j.trecker
 
 
 ### Preview
-![](!public/preview.png)
+![](public/preview.png)
