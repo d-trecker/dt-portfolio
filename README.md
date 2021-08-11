@@ -11,7 +11,7 @@ My personal react portfolio for showcasing my latest work.
 - [Technologies](#technologies)
 - [Links](#links)
 - [Contact](#contact)
-- [Previews](#Previews)
+- [Preview](#preview)
 
 ### Setup
 * Start by cloning the repo by using the commands:
@@ -29,9 +29,13 @@ Created  with:
 
 
 ### Links
-Repo Link: 
-Deployed Link: 
+Repo Link: https://github.com/d-trecker/dt-portfolio.git </br>
+Deployed Link: https://d-trecker.github.io/dt-portfolio/ </br>
 
 
 ### Contact
 Feel free to drop me a line @ [dylan.j.trecker@gmail.com](mailto:dylan.j.trecker@gmail.com?subject=[GitHub]%20Trecker%20Portfolio)
+
+
+### Preview
+![](!public/preview)
