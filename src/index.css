@@ -92,7 +92,7 @@ header {
 }
 
 header h1 {
-  font: 100px bold;
+  font: 8rem bold;
   font-family: stilltime;
   font-style: italic;
   color: var(--second-color);
