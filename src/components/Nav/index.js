@@ -5,7 +5,7 @@ function Nav(props) {
   return (
     <header>
       <h1>
-        <a href="/">Dylan Trecker</a>
+        <a href="/dt-portfolio">Dylan Trecker</a>
       </h1>
       <nav>
         <ul>
