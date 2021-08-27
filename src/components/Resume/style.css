@@ -1,0 +1,16 @@
+/*----START RESUME----*/
+.resume {
+  padding: 20px;
+  border-bottom: solid 0.15rem var(--fourth-color);
+  background: rgba(4, 0, 94, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(255, 32, 121, 0.6);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.resume h2 {
+  border-bottom: solid var(--second-color);
+}
+
+/*-END RESUME-*/

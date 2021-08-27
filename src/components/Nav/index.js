@@ -1,7 +1,7 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import './style.css';
 function Nav(props) {
-  const { navOpt = [], setCurrentNavOpt, currentNavOpt } = props;
   return (
     <header>
       <h1>
@@ -9,17 +9,11 @@ function Nav(props) {
       </h1>
       <nav>
         <ul>
-          {navOpt.map((navOpt) => (
-            <li className={currentNavOpt.name === navOpt.name ? "navActive" : undefined} key={navOpt.org}>
-              <a
-                href={`#${navOpt.org}`}
-                className="coolbtn"
-                onClick={() => setCurrentNavOpt(navOpt)}
-              >
-                {navOpt.name}
-              </a>
-            </li>
-          ))}
+
+          <Link to ="/about" className="coolbtn">About</Link>
+          <Link to ="/work" className="coolbtn">Work</Link>
+          <Link to ="/contact" className="coolbtn">Contact</Link>
+          <Link to ="/resume" className="coolbtn">Resume</Link>
         </ul>
       </nav>
     </header>

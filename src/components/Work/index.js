@@ -1,10 +1,12 @@
 import React from "react";
-import quizTime from "../../assets/images/Quiz Time.png";
+import './style.css';
+import quizTime from "../../assets/images/quiz-time.png";
 import dtScheduler from "../../assets/images/Scheduler.png";
 import weatherReport from "../../assets/images/weather-report.png";
 import poh from "../../assets/images/poh.png";
 import justNoise from "../../assets/images/just-noise.png";
 import coolNotes from "../../assets/images/cool-notes.png";
+import kissAnime from "../../assets/images/kiss-anime.png"
 // import comingSoon from "../../assets/images/dyl-soon.jpg";
 
 function Work() {
@@ -59,6 +61,15 @@ function Work() {
           ><i className="fab fa-github fa-1x "></i></a></h3>
         <a href="http://dt-cool-notes.herokuapp.com/" target="blank" rel="noopener noreferrer">
             <img src={coolNotes} alt="A cool note app" className="projects"></img>
+        </a>
+
+        <h3>Kiss Anime (From the Ashes Reborn)<a
+          href="https://github.com/theoneandonlyzako/kiss-anime"
+          target="blank"
+          rel="noopener noreferrer"
+          ><i className="fab fa-github fa-1x "></i></a></h3>
+        <a href="https://my-kiss-anime.herokuapp.com/" target="blank" rel="noopener noreferrer">
+            <img src={kissAnime} alt="A cool note app" className="projects"></img>
         </a>
     
         {/* <img src= {comingSoon} alt="80's retro ram head saying coming soon"

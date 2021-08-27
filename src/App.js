@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Nav from "./components/Nav";
 import Work from "./components/Work";
 import About from "./components/About";
@@ -8,53 +9,21 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [navOpt] = useState([
-    {
-      name: "About",
-      org: "about-me",
-    },
-    {
-      name: "Work",
-      org: "my-work",
-    },
-    {
-      name: "Contact",
-      org: "contact-me",
-    },
-    {
-      name: "Resume",
-      org: "resume",
-    },
-    
-  ]);
-
-  const [currentNavOpt, setCurrentNavOpt] = useState(navOpt[0]);
-
-  function displayComp(navOpt) {
-    switch (navOpt) {
-      case "About":
-        return <About></About>;
-      case "Work":
-        return <Work></Work>;
-      case "Contact":
-        return <Contact></Contact>;
-      case "Resume":
-        return <Resume></Resume>;
-      default:
-        return <About></About>;
-    }
-  }
 
   return (
+    <Router>
     <div>
-      <Nav
-        navOpt={navOpt}
-        setCurrentNavOpt={setCurrentNavOpt}
-        currentNavOpt={currentNavOpt}
-      ></Nav>
-      <main>{displayComp(currentNavOpt.name)}</main>
+      <Nav></Nav>
+      <main>
+      <Route exact path="/" component={About} /> 
+      <Route exact path="/about" component={About} /> 
+      <Route exact path="/work" component={Work} />  
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/resume" component={Resume} />     
+      </main>
       <Footer></Footer>
     </div>
+    </Router>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import footer from "../../assets/images/dyl-header.jpg";
-
+import './style.css';
 function Footer() {
   return (
     <div className="footer">
