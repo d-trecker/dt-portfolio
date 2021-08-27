@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/dt-portfolio/static/css/main.6d403c1b.chunk.css",
-    "main.js": "/dt-portfolio/static/js/main.92560b02.chunk.js",
-    "main.js.map": "/dt-portfolio/static/js/main.92560b02.chunk.js.map",
-    "runtime-main.js": "/dt-portfolio/static/js/runtime-main.8e200990.js",
-    "runtime-main.js.map": "/dt-portfolio/static/js/runtime-main.8e200990.js.map",
-    "static/js/2.61b02b9b.chunk.js": "/dt-portfolio/static/js/2.61b02b9b.chunk.js",
-    "static/js/2.61b02b9b.chunk.js.map": "/dt-portfolio/static/js/2.61b02b9b.chunk.js.map",
-    "static/js/3.d7428dbc.chunk.js": "/dt-portfolio/static/js/3.d7428dbc.chunk.js",
-    "static/js/3.d7428dbc.chunk.js.map": "/dt-portfolio/static/js/3.d7428dbc.chunk.js.map",
+    "main.css": "/dt-portfolio/static/css/main.26a2fde6.chunk.css",
+    "main.js": "/dt-portfolio/static/js/main.98b9a871.chunk.js",
+    "main.js.map": "/dt-portfolio/static/js/main.98b9a871.chunk.js.map",
+    "runtime-main.js": "/dt-portfolio/static/js/runtime-main.6ff7909d.js",
+    "runtime-main.js.map": "/dt-portfolio/static/js/runtime-main.6ff7909d.js.map",
+    "static/js/2.0da1448f.chunk.js": "/dt-portfolio/static/js/2.0da1448f.chunk.js",
+    "static/js/2.0da1448f.chunk.js.map": "/dt-portfolio/static/js/2.0da1448f.chunk.js.map",
+    "static/js/3.70d2461a.chunk.js": "/dt-portfolio/static/js/3.70d2461a.chunk.js",
+    "static/js/3.70d2461a.chunk.js.map": "/dt-portfolio/static/js/3.70d2461a.chunk.js.map",
     "index.html": "/dt-portfolio/index.html",
-    "static/css/main.6d403c1b.chunk.css.map": "/dt-portfolio/static/css/main.6d403c1b.chunk.css.map",
-    "static/js/2.61b02b9b.chunk.js.LICENSE.txt": "/dt-portfolio/static/js/2.61b02b9b.chunk.js.LICENSE.txt",
+    "static/css/main.26a2fde6.chunk.css.map": "/dt-portfolio/static/css/main.26a2fde6.chunk.css.map",
+    "static/js/2.0da1448f.chunk.js.LICENSE.txt": "/dt-portfolio/static/js/2.0da1448f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/dt-portfolio/static/media/yoster.9b17776b.ttf",
-    "static/media/Quiz Time.662a60f2.png": "/dt-portfolio/static/media/Quiz Time.662a60f2.png",
-    "static/media/Scheduler.1176c727.png": "/dt-portfolio/static/media/Scheduler.1176c727.png",
-    "static/media/cool-notes.861f4976.png": "/dt-portfolio/static/media/cool-notes.861f4976.png",
-    "static/media/dyl-header.1eb25bfe.jpg": "/dt-portfolio/static/media/dyl-header.1eb25bfe.jpg",
-    "static/media/just-noise.b6908575.png": "/dt-portfolio/static/media/just-noise.b6908575.png",
-    "static/media/me.2b6a805c.png": "/dt-portfolio/static/media/me.2b6a805c.png",
-    "static/media/poh.ab24ce92.png": "/dt-portfolio/static/media/poh.ab24ce92.png",
-    "static/media/weather-report.343edb9a.png": "/dt-portfolio/static/media/weather-report.343edb9a.png"
+    "static/media/cool-notes.e17b0e2a.png": "/dt-portfolio/static/media/cool-notes.e17b0e2a.png",
+    "static/media/dyl-header.0fd7e6cd.jpg": "/dt-portfolio/static/media/dyl-header.0fd7e6cd.jpg",
+    "static/media/kiss-anime.922fd272.png": "/dt-portfolio/static/media/kiss-anime.922fd272.png",
+    "static/media/me.5385218f.png": "/dt-portfolio/static/media/me.5385218f.png",
+    "static/media/poh.e0c81fc0.png": "/dt-portfolio/static/media/poh.e0c81fc0.png",
+    "static/media/quiz-time.fc47bbd4.png": "/dt-portfolio/static/media/quiz-time.fc47bbd4.png",
+    "static/media/weather-report.d2bea3c5.png": "/dt-portfolio/static/media/weather-report.d2bea3c5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e200990.js",
-    "static/js/2.61b02b9b.chunk.js",
-    "static/css/main.6d403c1b.chunk.css",
-    "static/js/main.92560b02.chunk.js"
+    "static/js/runtime-main.6ff7909d.js",
+    "static/js/2.0da1448f.chunk.js",
+    "static/css/main.26a2fde6.chunk.css",
+    "static/js/main.98b9a871.chunk.js"
   ]
 }
