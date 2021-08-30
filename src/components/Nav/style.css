@@ -143,6 +143,10 @@ header nav ul {
   .coolbtn {
     font-size: 4vw;
   }
+
+  .coolbtn:focus {
+    font-size: 4vw;
+  }
 }
 @media screen and (max-width: 575px) {
   header {
