@@ -1,22 +1,5 @@
 /*---START MY WORK---*/
 
-/* .b-w-c {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  
-  
-} */
-
-/* .my-work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 100%;
-  flex: 1;
-} */
 .my-work h2 {
   text-align: center;
   padding: 20px;
@@ -28,31 +11,46 @@
   padding-bottom: 20px;
 }
 
-.my-work h3 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
-.my-work i {
-  padding-left: 1rem;
-  color: var(--second-color);
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 2.5rem;
 }
 
-.projects {
-  display: block;
+.project {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 5px;
   max-width: 100%;
   height: auto;
-  width: 40%;
-  height: auto;
   background: rgba(4, 0, 94, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255, 32, 121, 0.4);
   border-radius: 10px;
   padding: 20px;
+  width: 100%;
+}
+
+.my-work h3 {
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+.my-work i {
+  padding-left: 1rem;
+  color: var(--second-color);
+}
+.project-images {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  max-width: 100%;
+  /* width: 40%; */
 }
 
 /*-END MY WORK-*/
@@ -67,29 +65,11 @@
   }
 }
 @media screen and (max-width: 575px) {
-  .my-work {
-    flex: 1 100%;
-    order: 1;
-  }
   .my-work h2 {
     text-align: center;
     flex: 100%;
   }
-  form {
-    width: 80%;
-  }
-  input {
-    width: 60%;
-  }
-  textarea {
-    width: 60%;
-  }
-  .contact {
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-  }
-  .link-wrapper a {
-    font-size: 0.9rem;
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }

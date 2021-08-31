@@ -11,7 +11,7 @@ function Nav(props) {
         <ul>
 
           <Link to ="/about" className="coolbtn">About</Link>
-          <Link to ="/work" className="coolbtn">Work</Link>
+          <Link to ="/projects" className="coolbtn">Projects</Link>
           <Link to ="/contact" className="coolbtn">Contact</Link>
           <Link to ="/resume" className="coolbtn">Resume</Link>
         </ul>
