@@ -19,7 +19,7 @@ header h1 {
   font-style: italic;
   color: var(--second-color);
   margin: 0;
-  text-shadow: 0 0 10px rgba(255, 143, 31, 0.897);
+  /* text-shadow: 0 0 10px rgba(255, 143, 31, 0.897); */
   text-align: center;
 }
 

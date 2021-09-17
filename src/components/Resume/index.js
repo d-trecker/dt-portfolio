@@ -1,9 +1,25 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import './style.css';
 
 function Resume() {
+    const pageTransition = {
+        in: { 
+          opacity:1,
+          x:0
+        },
+        out: {
+          opacity: 0,
+          x:"-100vw"
+        }
+      };
     return (
-        <div className="resume">
+        <motion.div 
+        initial="out"
+        animate="in"
+        exit="out"
+        variants= {pageTransition}
+        className="resume">
 
             <h2>Technical Skills</h2>
             <p>
@@ -17,10 +33,10 @@ function Resume() {
             • Deployment: GitHub and Heroku <br></br>  <br></br>
             </p>
           
-            <a className= "contactBtn" href= "https://drive.google.com/file/d/1Rledu8c-K6RtIZSdzA0QXGhuesXfF3M9/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
+            <a className= "resumeBtn" href= "https://drive.google.com/file/d/1cdW35PZXhjQFGlKB68ZBJwlzBnznUFew/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
 
 
-        </div>
+        </motion.div>
     );
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import './style.css';
 import quizTime from "../../assets/images/quiz-time.png";
 import dtScheduler from "../../assets/images/Scheduler.png";
@@ -10,9 +11,24 @@ import kissAnime from "../../assets/images/kiss-anime.png"
 // import comingSoon from "../../assets/images/dyl-soon.jpg";
 
 function Work() {
+  const pageTransition = {
+    in: { 
+      opacity:1,
+      x:0
+    },
+    out: {
+      opacity: 0,
+      x:"-100vw"
+    }
+  };
   return (
     
-    <div className="my-work">
+    <motion.div 
+    initial="out"
+    animate="in"
+    exit="out"
+    variants= {pageTransition}
+    className="my-work">
         <h2>Projects</h2>
         <section className= "projects">
         <div className= "project">
@@ -89,7 +105,7 @@ function Work() {
         {/* <img src= {comingSoon} alt="80's retro ram head saying coming soon"
             className="projects"></img> */}    
         </section>
-    </div>
+    </motion.div>
 
 
   );
