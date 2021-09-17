@@ -14,6 +14,7 @@ My personal react portfolio for showcasing my latest work.
 - [Preview](#preview)
 
 ### Setup
+To run locally: 
 * Start by cloning the repo by using the commands:
 * `$ git clone git@github.com:d-trecker/tracking-budgets.git`
 * From the root directory of the cloned repo, use the command `npm i` 
@@ -25,6 +26,7 @@ Created  with:
 * react: ^17.0.2
 * react-dom: ^17.0.2
 * react-scripts: 4.0.3
+* react-router-dom: ^5.2.0
 * fontawesome-free: ^5.15.4
 
 
