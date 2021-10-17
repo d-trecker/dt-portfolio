@@ -1,5 +1,9 @@
 /*---START MY WORK---*/
 
+.my-work {
+  width: auto;
+}
+
 .my-work h2 {
   text-align: center;
   padding: 20px;
@@ -40,7 +44,40 @@
   grid-auto-rows: auto;
   grid-gap: 1rem;
   margin: 2.5rem;
+  width: auto;
+  align-items: center;
+  justify-content: center;
 
+}
+
+.project-card {
+  background-color: transparent;
+  max-width: 100%;
+  height: 275px;
+  width: 350px;
+  perspective: 1000px;
+  
+}
+
+.project-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .project-card-inner {
+  transform: rotateY(180deg);
+}
+
+.project-front, .project-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .project {
@@ -59,39 +96,86 @@
     0 0 0.5em 0 rgba(255, 32, 121, 0.4);
 }
 
+.project-front {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(4, 0, 94, 0.5);
+  box-shadow: inset 0 0 0.5em 0 var(--fourth-color),
+    0 0 0.5em 0 rgba(255, 32, 121, 0.4);
+
+}
+
 .my-work h3 {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 1.5em;
 }
 .my-work i {
   padding-left: 1rem;
   color: var(--second-color);
 }
+
+.my-work p {
+  font-weight: bold;
+}
 .project-images {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 5px;
   max-width: 100%;
-  /* width: 40%; */
+  width: auto;
+  height: auto;
+}
+
+
+.project-back {
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(4, 0, 94, 0.5);
+  box-shadow: inset 0 0 0.5em 0 var(--fourth-color),
+    0 0 0.5em 0 rgba(255, 32, 121, 0.4);
+  transform: rotateY(180deg);
+}
+
+ .project-back h4 {
+  color: var(--third-color);
+  text-align: center;
 }
 
 /*-END MY WORK-*/
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, .5fr);
+
+  }
+
   .my-work h2 {
     font-size: 8vw;
   }
-  .my-work h3 {
-    font-size: 4vw;
-  }
+
 }
 @media screen and (max-width: 575px) {
   .my-work h2 {
     text-align: center;
     flex: 100%;
+  }
+  .my-work h3 {
+    font-size: 7vw;
   }
   .projects {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

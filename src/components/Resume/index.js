@@ -20,21 +20,29 @@ function Resume() {
         exit="out"
         variants= {pageTransition}
         className="resume">
-
+            
             <h2>Technical Skills</h2>
+            <div className= "resume-container">
             <p>
-            <br></br>
-            • Web Development: React, Node.js, Apollo, GraphQL, Express.js, Bootstrap, Handlebars, Webpack <br></br>  <br></br>
-            • Languages: Java, JavaScript, HTML, CSS, SQL, Bash <br></br>  <br></br>
-            • Databases: Relational (SQL), Non-relational (MongoDB) <br></br>  <br></br>
-            • Concepts: OOP, ORM, RESTful APIs, CRUD Operations, MVC frameworks <br></br>  <br></br>
-            • Testing Frameworks: Jest <br></br>  <br></br>
-            • Software: Git, Visual Studio Code, jGRASP, Insomnia, MySQL Workbench <br></br>  <br></br>
-            • Deployment: GitHub and Heroku <br></br>  <br></br>
+            <br/>
+            • Web Development: React, Node.js, Apollo, GraphQL, Express.js, Bootstrap, Handlebars, Webpack, Sass, Redux <br></br>  <br></br>
+            • Languages: Java, JavaScript, HTML, CSS, SQL, Bash <br/>  <br/>
+            • Databases: Relational (SQL), Non-relational (MongoDB) <br/>  <br/>
+            • Concepts: OOP, ORM, RESTful APIs, CRUD Operations, MVC frameworks <br/>  <br/>
+            • Testing Frameworks: Jest <br/>  <br/>
+            • Software: Git, Visual Studio Code, jGRASP, Insomnia, MySQL Workbench <br/>  <br/>
+            • Deployment: GitHub and Heroku <br/>  <br/>
+            
             </p>
-          
+            
+            <div className= "iframe-container">
+            <iframe src="https://drive.google.com/file/d/1bYrLd9e6c1xKRJ2aEfXhvfxqxlQVWHMz/preview" width="640" height="480" allow="autoplay"></iframe>
+            
+            </div>
             <a className= "resumeBtn" href= "https://drive.google.com/file/d/1cdW35PZXhjQFGlKB68ZBJwlzBnznUFew/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
-
+           
+            </div>
+            
 
         </motion.div>
     );

@@ -33,6 +33,10 @@
   flex: 1;
 }
 
+.bits p {
+  font-weight: bold;
+}
+
 .bio h2 {
   display: flex;
   flex-wrap: wrap;

@@ -71,6 +71,7 @@ function Contact() {
     className = "form-wrapper">
       <form id="contact-form" onSubmit={sendEmail}>
       <h1 data-testid = "h1tag">Contact Me</h1>
+      <p>Feel free to fill out the form below to shoot me a email! (Yes this form will send me a email). <br/> I can also be reached at dylan.j.trecker@gmail.com </p>
         <div className = "contact-divs">
           <input className="feedback-input" type="text"  placeholder="Name"  defaultValue={name} onBlur={handleChange} name="name" />
         </div>

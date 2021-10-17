@@ -10,6 +10,12 @@
   border-bottom: solid 0.15rem var(--fourth-color);
 }
 
+.form-wrapper p {
+  font-weight: bold;
+  color: #cc66cc;
+  margin-bottom: 1rem;
+}
+
 form {
   text-align: center;
   align-items: center;
