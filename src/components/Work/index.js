@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import "./style.css";
 import quizTime from "../../assets/images/quiz-time.png";
 import dtScheduler from "../../assets/images/Scheduler.png";
-import weatherReport from "../../assets/images/weather-report.png";
+// import weatherReport from "../../assets/images/weather-report.png";
 import poh from "../../assets/images/poh.png";
 import justNoise from "../../assets/images/just-noise.png";
 import coolNotes from "../../assets/images/cool-notes.png";
 import kissAnime from "../../assets/images/kiss-anime.png";
+import cryptoGrid from "../../assets/images/crypto-grid.png";
 // import comingSoon from "../../assets/images/dyl-soon.jpg";
 
 function Work() {
@@ -72,6 +73,48 @@ function Work() {
               <br />
               <p>Front end: React, Apollo Client</p>
               <p>Back end: Mongo DB, Mongoose, Express, Node</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <div className="project-card-inner">
+            <div className="project-front">
+              <h3>Crypto Grid</h3>
+              <img
+                src={cryptoGrid}
+                alt="A cryptocurrency app"
+                className="project-images"
+              ></img>
+            </div>
+            <div className="project-back">
+              <h3>
+                Project Details{" "}
+                <a
+                  href="https://github.com/d-trecker/crypto-grid"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github fa-1x "></i>
+                </a>
+              </h3>
+              <h4>
+                <a
+                  href="https://d-trecker.github.io/crypto-grid"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  https://d-trecker.github.io/crypto-grid
+                </a>
+              </h4>
+              <br />
+              <p>
+                A Cryptocurrency application created with React and Redux
+                Toolkit that keeps visitors up to date with all cryptocurrency
+                news and details.
+                <br/> <br/> Data is pulled from Rapid API (Coinranking /
+                Bing News). Ant Design used for styled components.
+              </p>
             </div>
           </div>
         </div>

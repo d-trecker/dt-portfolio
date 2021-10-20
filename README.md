@@ -16,7 +16,7 @@ My personal react portfolio for showcasing my latest work.
 ### Setup
 To run locally: 
 * Start by cloning the repo by using the commands:
-* `$ git clone git@github.com:d-trecker/tracking-budgets.git`
+* `$ git clone git@github.com:d-trecker/dt-portfolio.git`
 * From the root directory of the cloned repo, use the command `npm i` 
 * Run `npm start` 
 
@@ -28,7 +28,7 @@ Created  with:
 * react-scripts: 4.0.3
 * react-router-dom: ^5.2.0
 * fontawesome-free: ^5.15.4
-
+* framer-motion: ^4.1.17
 
 ### Links
 Repo Link: https://github.com/d-trecker/dt-portfolio.git </br>

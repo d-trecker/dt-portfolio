@@ -40,8 +40,7 @@ function About() {
           utilizing the MERN stack.
           <br></br>
           <br></br>I am eager to learning new technologies to see where this new
-          path takes me. Thank you for stopping by and taking a look! Please be
-          kind! My page is still undergoing changes!
+          path takes me. Thank you for stopping by and taking a look! 
         </p>
       </div>
     </motion.div>

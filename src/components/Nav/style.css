@@ -4,8 +4,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border-top: solid 0.1rem var(--fourth-color);
-  border-bottom: solid 0.1rem var(--fourth-color);
+  border-top: solid 0.05rem var(--fourth-color);
+  border-bottom: solid 0.05rem var(--fourth-color);
   justify-content: space-around;
   padding-top: 0.5rem;
   padding-bottom: 10px;
