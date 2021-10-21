@@ -36,10 +36,10 @@ function Resume() {
             </p>
             
             <div className= "iframe-container">
-            <iframe src="https://drive.google.com/file/d/1bYrLd9e6c1xKRJ2aEfXhvfxqxlQVWHMz/preview" width="640" height="480" allow="autoplay" title="dt-resume"></iframe>
+            <iframe src="https://drive.google.com/file/d/1LPSf3ojbE7lfHHG1DyHsDdEkNYDk-jli/preview" width="640" height="480" allow="autoplay" title="dt-resume"></iframe>
             
             </div>
-            <a className= "resumeBtn" href= "https://drive.google.com/file/d/1cdW35PZXhjQFGlKB68ZBJwlzBnznUFew/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
+            <a className= "resumeBtn" href= "https://drive.google.com/file/d/1LPSf3ojbE7lfHHG1DyHsDdEkNYDk-jli/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
            
             </div>
             

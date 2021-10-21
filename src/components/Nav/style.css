@@ -66,7 +66,7 @@ header nav ul {
   transition: background-color 100ms linear;
 }
 
-.coolbtn::before {
+/* .coolbtn::before {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -78,7 +78,7 @@ header nav ul {
   transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
   filter: blur(1em);
   opacity: 0.7;
-}
+} */
 
 .coolbtn::after {
   content: "";

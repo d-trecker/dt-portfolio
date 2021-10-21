@@ -113,7 +113,7 @@ function Work() {
                 Toolkit that keeps visitors up to date with all cryptocurrency
                 news and details.
                 <br/> <br/> Data is pulled from Rapid API (Coinranking /
-                Bing News). Ant Design used for styled components.
+                Bing News). Ant Design and Sass is used to style front end.
               </p>
             </div>
           </div>
