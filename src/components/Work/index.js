@@ -254,50 +254,6 @@ function Work() {
         <div className="project-card">
           <div className="project-card-inner">
             <div className="project-front">
-              <h3>D-Treck's Scheduler</h3>
-              <img
-                src={dtScheduler}
-                alt="A work day scheduler"
-                className="project-images"
-              ></img>
-            </div>
-            <div className="project-back">
-              <h3>
-                Project Details{" "}
-                <a
-                  href="https://github.com/d-trecker/dtreck-scheduler.git"
-                  target="blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github fa-1x "></i>
-                </a>
-              </h3>
-              <h4>
-                <a
-                  href="https://d-trecker.github.io/dtreck-scheduler/"
-                  target="blank"
-                  rel="noopener noreferrer"
-                >
-                  https://d-trecker.github.io/dtreck-scheduler
-                </a>
-              </h4>
-              <br />
-              <p>
-                A simple calendar application that allows a user to save events
-                for each hour of the day.
-              </p>
-              <br />
-              <p>
-                The applicaiton utilizes moment.js and features dynamically
-                updated HTML and CSS powered by jQuery.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="project-card">
-          <div className="project-card-inner">
-            <div className="project-front">
               <h3>Quiz Time</h3>
               <img
                 src={quizTime}

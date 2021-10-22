@@ -27,6 +27,7 @@
 .resumeBtn {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: auto;
+  text-align: center;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -50,6 +51,7 @@
   padding-right: 10px;
   padding-left: 10px;
   /* border: none; */
+  
 }
 
 .resumeBtn:hover {
@@ -99,6 +101,9 @@
 }
 
 .iframe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
   margin-top: 10px;
 }

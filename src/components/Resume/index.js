@@ -37,9 +37,9 @@ function Resume() {
             
             <div className= "iframe-container">
             <iframe src="https://drive.google.com/file/d/1LPSf3ojbE7lfHHG1DyHsDdEkNYDk-jli/preview" width="640" height="480" allow="autoplay" title="dt-resume"></iframe>
-            
-            </div>
             <a className= "resumeBtn" href= "https://drive.google.com/file/d/1LPSf3ojbE7lfHHG1DyHsDdEkNYDk-jli/view?usp=sharing" target= "blank" rel="noopener noreferrer">Download Resume</a>
+            </div>
+            
            
             </div>
             
